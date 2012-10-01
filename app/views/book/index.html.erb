@@ -1,0 +1,5 @@
+<% @book.each do |f| %>
+ name<%= f.name %><br>
+email <%= f.email %><br>
+<%= link_to "show",{:action=>'show', :id=>f.id} %>
+<%end%>

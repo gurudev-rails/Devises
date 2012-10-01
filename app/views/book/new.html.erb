@@ -1,0 +1,7 @@
+<% form_for :book, :url => { :controller => "book", :action => "create" } do |f| %>
+<%= f.label :name %></br>
+    <%= f.text_field :name %>
+    <%= f.label :email %></br>
+    <%= f.text_field :email %>
+<%= f.submit "login" %>
+<%end%>
